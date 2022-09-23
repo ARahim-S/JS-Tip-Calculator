@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1 class="head">Tip Calculator</h1>
+      <form class="form">
+        <label for="billamount">Bill Amount</label>
+        <input type="number" name="billamount" class="billamount" />
+        <label for="numberguest">Number of the Guest</label>
+        <input type="number" name="numberguest" class="numberguest" />
+        <label for="service">Service Quality</label>
+        <select name="service" id="service" class="servicequality">
+          <option value="" disabled selected hidden>Please Choose...</option>
+          <option value="30">30% - Outstanding</option>
+          <option value="20">20% - Good</option>
+          <option value="15">15% - It was ok</option>
+          <option value="10">10% - Bad</option>
+          <option value="5">5% - Terrible</option>
+        </select>
+      </form>
+      <button class="calcBtn">Calculate</button>
+      <div class="tip"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
